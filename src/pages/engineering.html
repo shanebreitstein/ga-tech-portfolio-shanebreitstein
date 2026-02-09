@@ -25,15 +25,71 @@
     <main>
         <section>
             <h2>Polyphonic Digital Synthesizer</h2>
-            <p>Audio samples</p>
-            <p>Demo Video HERE</p>
+            <p>Note: No generative AI was used to create code for this project.</p>
+            <h3>Audio Samples</h3>
+            <p>Samples HERE</p>
+            <h3>PCB</h3>
+            <p>I designed this custom PCB to house all the electronics. It includes sliders, toggleable buttons, double and triple throw switches.</p>
+            <img src="../assets/imgs/synth_pcb.png" alt="Image of Synth PCB">
+            <h3>Measuring Latency</h3>
+            <p>In order to measure the latency of the device, I created a simple experiment in a DAW which played a MIDI scale and measured the latency for each note.</p>
+            <p>Furthermore, I calculated the latency caused by processing by comparing a very rudimentary synthesizer with minimal processing overhead and compared it to my complex firmware.</p>
+            <!-- <div class="latency-comp">
+                <img src="../assets/imgs/synth_latency_barebones.png">
+                <img src="../assets/imgs/synth_latency_fw.png">
+            </div> -->
+            <h4>Results</h4>
+            <div class="latency-results">
+                <table class="latency">
+                    <tr>
+                        <td><a href="../assets/imgs/synth_latency_barebones.png">Rudimentary Synth</a></td>
+                        <td><a href="../assets/imgs/synth_latency_fw.png">My Synth</a></td>
+                    </tr>
+                    <tr>
+                        <td>64ms</td>
+                        <td>66ms</td>
+                    </tr>
+                    <tr>
+                        <td>67ms</td>
+                        <td>68ms</td>
+                    </tr>
+                    <tr>
+                        <td>69ms</td>
+                        <td>71ms</td>
+                    </tr>
+                    <tr>
+                        <td>60ms</td>
+                        <td>64ms</td>
+                    </tr>
+                    <tr>
+                        <td>63ms</td>
+                        <td>67ms</td>
+                    </tr>
+                    <tr>
+                        <td>68ms</td>
+                        <td>70ms</td>
+                    </tr>
+                    <tr>
+                        <td>70ms</td>
+                        <td>72ms</td>
+                    </tr>
+                    <tr>
+                        <td>61ms</td>
+                        <td>66ms</td>
+                    </tr>
+                </table>
+                <div class="results">
+                    <p class="results-cat">RS</p>
+                    <p class="results-cat">MS</p>
+                </div>        
+            </div>
+            
             <div class="video-code">
                 <video src="" controls> 
                     <p>Demo video here<a href="">Link to video or audio</a></p>
                 </video>
                 <div class="scrollable-code">
-                    <pre><code id ="code-block"class="language-cpp">
-#include &lt;TeensyThreads.h&gt;
+                    <pre><code id ="code-block"class="language-cpp">#include &lt;TeensyThreads.h&gt;
 #include &lt;Audio.h&gt;
 #include &lt;Wire.h&gt;
 #include &lt;SPI.h&gt;
@@ -575,13 +631,12 @@ void readDigitalPins() {
                     </code></pre>
                 </div>
             </div>
-            <p>Images of PCB in KiCAD</p>
-            <p>I built this digital synthesizer inspired by the Roland Juno 60 Synthesizer. Based on the Teensy 4.1 microcontroller, this device </p>
+
         </section>
-        <section>
+        <!-- <section>
             <h2>6-Axis Robotic Arm</h2>
             <p>Senior Design Capstone. </p>
-        </section>
+        </section> -->
     </main>
     <footer>
         <p>&copy; 2026 Shane Breitstein All rights reserved.</p>

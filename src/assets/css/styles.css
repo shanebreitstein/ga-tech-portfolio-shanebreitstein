@@ -124,6 +124,7 @@ nav ul li:last-child {
     align-items: center;
     padding: 0; /* Remove extra padding inside the row */
     gap: 10px; /* Add a small gap between the school and GPA */
+    margin:0;
 }
 
 
@@ -354,4 +355,36 @@ code td.hljs-ln-code {
 }
 .skill-group .skills:nth-child(odd) {
     background-color: #151515;
+}
+.latency-comp {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.latency-comp img {
+    width: 100%;
+    /* max-width: ; */
+}
+td a {
+    color:#EFBD6B;
+}
+td a:hover {
+    text-decoration: none;
+}
+table.latency {
+    border:#090f1c 5px solid;
+    width: 100%;
+    table-layout: fixed;
+}
+table.latency td {
+    text-align: center;
+    margin: 0;
+}
+.latency-results {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+.results-cat {
+    display:flex;
 }
